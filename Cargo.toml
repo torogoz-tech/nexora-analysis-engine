@@ -16,7 +16,7 @@ regex = "1"
 regex-syntax = "0.8"
 sha2 = "0.10"
 tracing = "0.1"
-nexora-core = { git = "https://github.com/torogoz-tech/nexora-platform-contracts.git", tag = "0.4.0" }
+nexora-core = { git = "https://github.com/torogoz-tech/nexora-platform-contracts.git", tag = "0.4.0-final" }
 nexora-language = { path = "crates/nexora-language" }
 nexora-lexer = { path = "crates/nexora-lexer" }
 nexora-parser = { path = "crates/nexora-parser" }
