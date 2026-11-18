@@ -1,0 +1,27 @@
+[workspace]
+resolver = "2"
+members = ["crates/*"]
+
+[workspace.package]
+version = "0.4.0"
+edition = "2024"
+license = "MIT"
+
+[workspace.dependencies]
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+serde_yaml_ng = "0.10"
+thiserror = "2"
+regex = "1"
+regex-syntax = "0.8"
+sha2 = "0.10"
+tracing = "0.1"
+nexora-core = { git = "https://github.com/torogoz-tech/nexora-platform-contracts.git", tag = "0.4.0" }
+nexora-language = { path = "crates/nexora-language" }
+nexora-lexer = { path = "crates/nexora-lexer" }
+nexora-parser = { path = "crates/nexora-parser" }
+nexora-ast = { path = "crates/nexora-ast" }
+nexora-symbols = { path = "crates/nexora-symbols" }
+nexora-graph = { path = "crates/nexora-graph" }
+nexora-storage = { path = "crates/nexora-storage" }
+nexora-indexer = { path = "crates/nexora-indexer" }
